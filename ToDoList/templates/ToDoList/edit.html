@@ -1,0 +1,12 @@
+{% extends "ToDoList/layout.html" %} {%block content%}
+
+<div class="container text-center">
+  <form method="POST">
+    {%csrf_token%}
+    <div class="form-group">{{form}}</div>
+
+    <button type="submit" class="btn btn-primary">Edit task</button>
+  </form>
+</div>
+
+{%endblock%}
